@@ -1,0 +1,9 @@
+<div>
+  <h1 class="font-bold text-4xl mb-5 ">Create New Blog</h1>
+  <%= form_with model: @blog, method: :post do |form| %>
+    <%= form.label :name, 'Name', class: 'text-lg'%>
+    <%= form.text_field :name, class: "block focus:ring-0", placeholder: 'Write a name for the blog' %>
+    <%= form.file_field :image, class: "mt-4" %>
+    <%= form.submit 'Create', class: "block mt-6 bg-gray-200 border border-gray-500 rounded p-2 px-6 cursor-pointer" %>
+  <% end %>
+</div>

@@ -1,0 +1,7 @@
+<div class="text-xl">
+  <span class="font-bold ">Name:</span> <%= @blog.name %>
+  <div>
+    <span class="font-bold">Image Link: </span> <%= link_to "#{@blog.image.filename}", @blog.image.url, class: "underline text-blue-900" %>
+    <%= image_tag @blog.image, class: "rounded-lg" %>
+  </div>
+</div>
